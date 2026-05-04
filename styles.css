@@ -1,0 +1,123 @@
+.content-engine-modal {
+  min-width: min(900px, 90vw);
+}
+
+.content-engine-toolbar,
+.content-engine-actions,
+.content-engine-bottom-bar,
+.content-engine-tab-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.75rem 0;
+}
+
+.content-engine-file-list {
+  max-height: 45vh;
+  overflow: auto;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  padding: 0.5rem;
+  background: var(--background-secondary);
+}
+
+.content-engine-file-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.25rem;
+  border-radius: var(--radius-s);
+  cursor: pointer;
+}
+
+.content-engine-file-row:hover {
+  background: var(--background-modifier-hover);
+}
+
+.content-engine-primary {
+  margin-top: 1rem;
+}
+
+.content-engine-summary,
+.content-engine-insights,
+.content-engine-tab-panel,
+.content-engine-result-row {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  padding: 1rem;
+  margin: 1rem 0;
+  background: var(--background-primary);
+}
+
+.content-engine-tabs {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.content-engine-tabs button.is-active {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+
+.content-engine-preview {
+  padding: 0.75rem;
+  border-radius: var(--radius-m);
+  background: var(--background-secondary);
+}
+
+.content-engine-preview pre {
+  white-space: pre-wrap;
+  font-family: var(--font-text);
+  line-height: 1.5;
+}
+
+.content-engine-tags {
+  color: var(--text-muted);
+}
+
+.content-engine-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
+  font-size: var(--font-ui-smaller);
+  font-weight: 600;
+  background: var(--background-modifier-border);
+  color: var(--text-muted);
+}
+
+.content-engine-badge-publishing {
+  background: rgba(var(--color-yellow-rgb), 0.18);
+  color: var(--text-warning);
+}
+
+.content-engine-badge-published {
+  background: rgba(var(--color-green-rgb), 0.18);
+  color: var(--text-success);
+}
+
+.content-engine-badge-error {
+  background: rgba(var(--color-red-rgb), 0.18);
+  color: var(--text-error);
+}
+
+.content-engine-loading {
+  padding: 2rem;
+  text-align: center;
+}
+
+.content-engine-result-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.content-engine-result-row {
+  display: grid;
+  grid-template-columns: minmax(7rem, auto) auto 1fr;
+  gap: 0.75rem;
+  align-items: center;
+}
