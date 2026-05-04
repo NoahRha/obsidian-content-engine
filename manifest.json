@@ -1,0 +1,9 @@
+{
+  "id": "obsidian-content-engine",
+  "name": "Content Engine",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "AI로 옵시디언 위키를 분석하여 블로그, 유튜브, 소셜 미디어 콘텐츠를 자동 생성·배포합니다.",
+  "author": "Noah Rha",
+  "isDesktopOnly": true
+}
